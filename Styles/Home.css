@@ -34,3 +34,30 @@ body {
 .hero-text h1 {
     font-size: 7em;
 }
+
+.intro-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 120px 0 0 0;
+}
+
+.side-intro-wrapper {
+    width: 600px;
+    height: 400px;
+    background: black;
+}
+.left-intro-wrapper {
+    width: 720px;
+    height: 520px;
+    background: black;
+    margin: 0 16px 0 0;
+}
+.right-intro-wrapper {
+    width: 480px;
+    height: 520px;
+    background: black;
+    margin: 0 0 0 16px;
+}
