@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="Styles/Home.css">
 
     <title>Rick and Morty</title>
+    
 </head>
 
 <body>
@@ -35,9 +36,22 @@
                 </div>
             </div>
         </section>
-        <section class="intro-wrapper">
-            <div class="left-intro-wrapper"></div>
+        <section class="intro-wrapper" id="intro-wrapper">
+            <div class="left-intro-wrapper">
+                <div class="video-intro">
+                    <iframe src="https://www.youtube.com/embed/MkekGuqcbwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
             <div class="right-intro-wrapper"></div>
+        </section>
+        <section class="characters-wrapper" id="characters-wrapper">
+            <div class="characters-list-wrapper">
+                <h1>Characters:</h1>
+                
+                
+                <h2 id="testDavid"></h2>
+            </div>
+            
         </section>
     </div>
     
@@ -46,7 +60,9 @@
     <!-- bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+    <script type="module" src="js/main.js"></script>    
 </body>
 
 </html>

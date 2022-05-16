@@ -43,21 +43,41 @@ body {
     height: 100vh;
     padding: 120px 0 0 0;
 }
-
-.side-intro-wrapper {
-    width: 600px;
-    height: 400px;
-    background: black;
-}
 .left-intro-wrapper {
     width: 720px;
-    height: 520px;
-    background: black;
-    margin: 0 16px 0 0;
+    height: auto;
+    margin: 16px;
 }
 .right-intro-wrapper {
     width: 480px;
-    height: 520px;
+    height: 435px;
     background: black;
-    margin: 0 0 0 16px;
+    margin: 16px;
+}
+.video-intro {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+}
+.video-intro iframe, .video-intro object, .video-intro embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.characters-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+.characters-list-wrapper {
+    width: 1200px;
+    height: 100%;
+    margin: 16px;
 }
