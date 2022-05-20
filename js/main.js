@@ -7,8 +7,6 @@ fetch('https://rickandmortyapi.com/api/character', {
     return res.json();
 })
 .then(data => {
-    // const characters = data.results.map((character) => `${character.name}<br>`);
-    // dataResponse.innerHTML = characters;
     let characters = data.results;
     characters.forEach(character => {
         const card =    `<div class="card bg-dark m-1" style="width: 18rem;">
@@ -25,10 +23,4 @@ fetch('https://rickandmortyapi.com/api/character', {
     });
 })
 .catch(error => alert("ERROR"));
-
-
-
-
-
-
 

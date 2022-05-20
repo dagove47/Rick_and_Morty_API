@@ -24,6 +24,8 @@ body {
     position: relative;
 }
 .hero-text {
+    width: 100%;
+    height: auto;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -90,4 +92,33 @@ body {
 .cards-list .card {
     box-shadow: 0 0 0.5em lightblue;
     border-radius: 15px;
+}
+.box0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+}
+.box1 {
+    height: 400px;
+    width: 400px;
+    background: yellow;
+}
+.box2 {
+    height: 200px;
+    width: 200px;
+    background: red;
+}
+.box3 {
+    height: 100px;
+    width: 100px;
+    background: blue;
+}
+
+.footer{
+    height: 100vh;
+    width: 100%;
+    background: red;
 }
