@@ -24,17 +24,32 @@ body {
     position: relative;
 }
 .hero-text {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: auto;
+    height: 100%;
+    margin: 0;
     text-align: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
 }
 .hero-text h1 {
     font-size: 7em;
+}
+.logo-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+}
+.arrow-down-icon {
+    font-size: 50px;
+    color: #b2df28;
+}
+.arrow-down-icon:hover {
+    font-size: 60px;
+    color: #00b5cc;
 }
 
 .intro-wrapper {
@@ -42,17 +57,41 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    padding: 120px 0 0 0;
+    padding: 120px 0 60px 0;
 }
 .left-intro-wrapper {
-    width: 720px;
-    height: auto;
-    margin: 16px;
-}
-.right-intro-wrapper {
+    display: flex;
     width: 480px;
     height: 435px;
-    background: black;
+    margin: 16px;
+    color: #fff;
+    font-size: 18px;
+}
+.intro-tags {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 5px 0 0;
+    border: 2px solid #b2df28;
+    border-radius: 25px;
+    box-shadow: 0 0 0.2em #b2df28;
+}
+.intro-information {
+    display: flex;
+    padding: 0;
+}
+.intro-information li{
+    list-style-type: none;
+    border-top: 1px solid #fff;
+    padding: 10px 0;
+}
+.intro-information li span {
+    font-size: 22;
+    font-weight: 600;
+    color: #b2df28;
+}
+.right-intro-wrapper {
+    width: 720px;
+    height: auto;
     margin: 16px;
 }
 .video-intro {
@@ -61,6 +100,8 @@ body {
 	padding-bottom: 56.25%;
 	padding-top: 30px;
 	position: relative;
+    box-shadow: 0 0 0.7em #00b5cc;
+    border-radius: 15px;
 }
 .video-intro iframe, .video-intro object, .video-intro embed {
 	height: 100%;
@@ -82,43 +123,40 @@ body {
     height: 100%;
     margin: 16px;
 }
+.characters-list-wrapper h2 {
+    color: #fff;
+}
+.characters-list-wrapper form {
+    width: 300px;
+}
+.characters-list-wrapper form input {
+    box-shadow: 0 0 0.7em #00b5cc;
+    border-radius: 15px;
+}
 .cards-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
 }
 
 .cards-list .card {
-    box-shadow: 0 0 0.5em lightblue;
+    margin: 30px 12px 0 0;
+    box-shadow: 0 0 0.5em #00b5cc;
     border-radius: 15px;
 }
-.box0 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background: #fff;
-}
-.box1 {
-    height: 400px;
-    width: 400px;
-    background: yellow;
-}
-.box2 {
-    height: 200px;
-    width: 200px;
-    background: red;
-}
-.box3 {
-    height: 100px;
-    width: 100px;
-    background: blue;
+.cards-list .card img{
+    border-radius: 15px 15px 0 0;
 }
 
 .footer{
     height: 100vh;
     width: 100%;
     background: red;
+}
+
+@media only screen and (min-width: 992px) {
+    .logo-image {
+        width: 60%;
+    }
 }

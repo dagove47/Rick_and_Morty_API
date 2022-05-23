@@ -30,30 +30,45 @@
               </nav>
         </section>
         <section class="hero-wrapper">
-            <div class="hero-image">
-                <div class="hero-text">
-                    <img src="Assets/Rick-And-Morty-Logo.png" alt="" width="60%" height="auto">
-                    <i class="bi bi-arrow-down-short"></i>
-                </div>
-                <div>
-                    <i class="bi bi-arrow-down-short"></i>
+            <div class="hero-image d-flex">
+                <div class="hero-text row">
+                    <div class="logo-image">
+                        <img src="Assets/Rick-And-Morty-Logo.png" width="100%" height="auto" alt="">
+                    </div>
+                    <a href="#intro-wrapper"><i class="bi bi-arrow-down-circle arrow-down-icon"></i></a>
                 </div>
             </div>
         </section>
         <section class="intro-wrapper" id="intro-wrapper">
-            <div class="left-intro-wrapper">
+            <div class="left-intro-wrapper row">
+                <div class="d-flex row">
+                    <div class="intro-tags">Animation</div>
+                    <div class="intro-tags">Adventure</div>
+                    <div class="intro-tags">Comedy</div>
+                </div>
+                <div class="intro-description p-0">The series follows the misadventures of cynical mad scientist Rick Sanchez and his good-hearted, but fretful grandson Morty Smith, who split their time between domestic life and interdimensional adventures.</div>
+                <div>
+                    <ul class="intro-information row">
+                        <li class="col"><span>Creators: </span> Dan Harmon - Justin Rolland</li>
+                        <li><span>Stars: </span> Justin Roiland - Chris Parnell - Spencer Grammer</li>
+                        <li><span>Seasons: </span>5</li>
+                        <li><span>Episodes: </span>51</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-intro-wrapper">
                 <div class="video-intro">
                     <iframe src="https://www.youtube.com/embed/MkekGuqcbwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="right-intro-wrapper"></div>
+            
         </section>
         <section class="characters-wrapper" id="characters-wrapper">
             <div class="characters-list-wrapper">
-                <h1>Characters:</h1>
-                <form class="d-flex" role="search">
+                <h2>Characters:</h2>
+                <form class="d-flex mt-3" role="search">
                     <input class="form-control me-2" id="search-Card" type="search" placeholder="Search Character" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-info" type="submit">Search</button>
                 </form>
                 <div class="cards-list" id="cards-list"></div>
             </div>

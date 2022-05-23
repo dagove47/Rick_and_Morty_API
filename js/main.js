@@ -9,7 +9,7 @@ fetch('https://rickandmortyapi.com/api/character', {
 .then(data => {
     let characters = data.results;
     characters.forEach(character => {
-        const card =    `<div class="card bg-dark m-1" style="width: 18rem;">
+        const card =    `<div class="card bg-dark" style="width: 18rem;">
                             <img src=${character.image} class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold mb-3">${character.name}</h5>
