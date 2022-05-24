@@ -3,17 +3,24 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     background: #091332;
     height: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .hero-wrapper {
     width: 100%;
     height: 100vh;
 }
+
 .hero-image {
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/RickAndMorty_Home.png"); */
     background-image: url("../Assets/RickAndMorty_Home.png");
@@ -23,6 +30,7 @@ body {
     background-size: cover;
     position: relative;
 }
+
 .hero-text {
     display: flex;
     justify-content: center;
@@ -33,9 +41,11 @@ body {
     position: absolute;
     color: white;
 }
+
 .hero-text h1 {
     font-size: 7em;
 }
+
 .logo-image {
     display: flex;
     justify-content: center;
@@ -43,10 +53,12 @@ body {
     width: 90%;
     height: 90%;
 }
+
 .arrow-down-icon {
     font-size: 50px;
     color: #b2df28;
 }
+
 .arrow-down-icon:hover {
     font-size: 60px;
     color: #00b5cc;
@@ -59,6 +71,7 @@ body {
     width: 100%;
     padding: 120px 0 60px 0;
 }
+
 .left-intro-wrapper {
     display: flex;
     width: 480px;
@@ -67,6 +80,7 @@ body {
     color: #fff;
     font-size: 18px;
 }
+
 .intro-tags {
     width: fit-content;
     height: fit-content;
@@ -75,40 +89,48 @@ body {
     border-radius: 25px;
     box-shadow: 0 0 0.2em #b2df28;
 }
+
 .intro-information {
     display: flex;
     padding: 0;
 }
-.intro-information li{
+
+.intro-information li {
     list-style-type: none;
     border-top: 1px solid #fff;
     padding: 10px 0;
 }
+
 .intro-information li span {
     font-size: 22;
     font-weight: 600;
     color: #b2df28;
 }
+
 .right-intro-wrapper {
     width: 720px;
     height: auto;
     margin: 16px;
 }
+
 .video-intro {
-	height: 0;
-	overflow: hidden;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
     box-shadow: 0 0 0.7em #00b5cc;
     border-radius: 15px;
 }
-.video-intro iframe, .video-intro object, .video-intro embed {
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
+
+.video-intro iframe,
+.video-intro object,
+.video-intro embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .characters-wrapper {
@@ -118,18 +140,22 @@ body {
     height: auto;
     color: #fff;
 }
+
 .characters-list-wrapper {
     width: 1200px;
     height: 100%;
     margin: 16px;
 }
+
 .characters-list-wrapper h2 {
     color: #fff;
 }
-.characters-list-wrapper form input {
+
+.characters-list-wrapper div input {
     box-shadow: 0 0 0.7em #00b5cc;
     border-radius: 15px;
 }
+
 .cards-list {
     display: flex;
     flex-wrap: wrap;
@@ -142,18 +168,69 @@ body {
     box-shadow: 0 0 0.5em #00b5cc;
     border-radius: 15px;
 }
-.cards-list .card img{
+
+.cards-list .card img {
     border-radius: 15px 15px 0 0;
 }
+
+.subtitle-card {
+    display: flex;
+    color: #b2df28;
+}
+
+.card-text {
+    color: #fff;
+}
+
 .hide {
     display: none;
 }
 
-.footer{
-    height: 25vh;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
     width: 100%;
     margin: 50px 0 0 0;
-    background: red;
+    background: rgba(0, 181, 204, 0.3);
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.contact-header {
+    margin: 10px;
+}
+
+.contact-header>a {
+    font-size: 22px;
+    color: #b2df28;
+}
+
+.contact-header>a:hover {
+    color: #00b5cc;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: #b2df28;
+    font-size: 36px;
+}
+
+.contact-links a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.contact-links a:hover {
+    color: #00b5cc;
 }
 
 @media only screen and (min-width: 992px) {
